@@ -62,12 +62,6 @@ export default function CadastrarUsuario(){
 
     //o atributo name do input guarda o dado digitado e envia para o servidor
     return(
-        <>
-            <div className="background-overlay"></div>
-
-            <div className="cadastro-container">
-                <h2>Cadastre-se</h2>
-                <p className="subtitle">Digite seu e-mail e senha para continuar</p>
 
                 <form action={criarUsuarioCliente}>
                     <input type="email" placeholder="E-mail" name='email' id='email' aria-label='email'/>
@@ -76,8 +70,6 @@ export default function CadastrarUsuario(){
 
                     <button type="submit" className="btn_cadastrar">Cadastrar</button>
                 </form>
-            </div>
 
-        </>
     );
 }

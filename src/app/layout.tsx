@@ -1,16 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import { Toaster } from "react-hot-toast";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const montserrat = Montserrat({ subsets: ['latin']}); //importa a fonte
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,10 +18,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en" className={montserrat.className}>
+      <body>
+
         {children}
+
+        <Toaster position="top-right"/>
+
       </body>
     </html>
   );
 }
+
+//o Toaster é usado no login e no cadastro, ele tem que compor o corpo do layout 
+// para aparecer nessas páginas quando elas assumirem o lugar de {children}
+//children troca toda hora, é constantemente roteado

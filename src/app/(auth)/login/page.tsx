@@ -53,12 +53,7 @@ export default function Login() {
     }
 
     return(
-        <>
-            <div className="background-overlay"></div>
-
-            <div className="login-container">
-                <h2>Faça login ou crie sua conta</h2>
-                <p className="subtitle">Digite seu e-mail e senha para continuar</p>
+       
 
                 <form action={verificarLogin}>
                     <input type="email" placeholder="E-mail" name='email' id='email' aria-label='email'/>
@@ -66,11 +61,10 @@ export default function Login() {
 
                     <button type="submit" className="btn_continuar">Continuar</button>
 
-                    <button type="button" className="btn_criar_conta">
+                    
                        <Link href='/cadastro'>Criar conta</Link> 
-                    </button>
+                  
                 </form>
-            </div>
-        </>
+    
     );
 }

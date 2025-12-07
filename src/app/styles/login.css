@@ -4,8 +4,7 @@ body {
     font-family: 'Inter', sans-serif;
 
     /* AQUI GARANTE QUE A IMAGEM VAI APARECER */
-    background: url("https://media.gazetadopovo.com.br/2024/06/27175119/divertidamente_2-720x450.jpg") no-repeat center center fixed;
-    background-size: cover;
+    
     
     height: 100vh;
     display: flex;
