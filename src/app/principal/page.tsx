@@ -12,13 +12,12 @@ import Header from "../ui/header";
 
 export default async function PaginaInicial() {
 
-    const dados = await conexaoBD.retornarBD(bd);
+    const dados = await conexaoBD.retornarBD(bd); //guarda os dados contidos no filmes-db.json no vetor dados
 
-    const filme = dados.map(f => {
-        return <Filme {...f} key={f.id} />
+    //cria o vetor de filmes; .map itera sobre todos os itens de dados
+    const filmes = dados.map(f => {
+        return <Filme {...f} key={f.id} /> //retorna a estrutura/objeto Filme com todos os atributos de f, que itera sobre o vetor dados inteiro
     })
-
-
 
   return (
         <>
@@ -27,7 +26,7 @@ export default async function PaginaInicial() {
             <h1>CINE FILMES</h1>
             
             <div className="cards">
-                {filme}
+                {filmes}
             </div>
                 
             <div className="footer">

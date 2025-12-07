@@ -8,10 +8,10 @@ export default function botaoLogout(){
 
         await deletarSessao();
 
-        redirect('/login');
+        redirect('/login'); //redireciona para a página de login
     }
 
-    return(
+    return( //botão dispara função de logout
         <form action={logout}>
             <button>Logout</button>
         </form>

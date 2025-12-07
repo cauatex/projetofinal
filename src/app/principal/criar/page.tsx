@@ -11,6 +11,7 @@ export default function CriarFilme(){
     const adicionarFilme = async (dados: FormData) => {
         'use server' //vai carregar o HTML pro lado do servidor
 
+        //criar uma nova instância de FilmeProps para ser adicionada à base de dados
         const novoFilme: FilmeProps = { //todos esse dados vêm do atributo name dos inputs
             id: crypto.randomUUID(),
             nome: dados.get('nome') as string,

@@ -12,7 +12,7 @@ export interface FilmeProps{
     descricao: string,
 }
 
-//props recebe um objeto do tipo Filme
+//props recebe um objeto do tipo Filme, que contém todas as informações que estarão no card
 export default function Filme(props: FilmeProps){
 
     const deletarFilme = async () => {

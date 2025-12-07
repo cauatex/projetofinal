@@ -24,7 +24,7 @@ const formatacaoCadastro = z.object({
 
 export default function CadastrarUsuario(){
 
-    const criarUsuarioCliente = async (dados: FormData) => {
+    const criarUsuarioCliente = async (dados: FormData) => { //função recebe os dados do form
 
         //extraindo os dados do formulário
         const usuario = {
@@ -38,7 +38,7 @@ export default function CadastrarUsuario(){
         //cria a mensagem de erro
         if(!resultado.success){
             let msgErro = '';
-            resultado.error.issues.forEach((i) => {
+            resultado.error.issues.forEach((i) => { //concatena todas as mensagens de erro do vetor issues
                 msgErro = msgErro + i.message + '.\n';
             })
 
@@ -48,7 +48,7 @@ export default function CadastrarUsuario(){
         }
 
         //coloca o usuário na base de dados
-        const retorno = await criarUsuario(usuario as credenciais); //cria um objeto usuário do tipo credenciais
+        const retorno = await criarUsuario(usuario as credenciais); //cria um objeto usuário do tipo credenciais e o coloca na base de dados
 
         if(retorno.error){ //se não conseguir criar o usuário, imprime a mensagem de erro
             toast.error(retorno.error);
@@ -62,7 +62,7 @@ export default function CadastrarUsuario(){
 
     //o atributo name do input guarda o dado digitado e envia para o servidor
     return(
-
+                //formulário de cadastro dispara a função para criar usuário
                 <form action={criarUsuarioCliente}>
                     <input type="email" placeholder="E-mail" name='email' id='email' aria-label='email'/>
                     <input type="password" placeholder="Senha" name='senha' id='senha' aria-label='senha' />

@@ -16,7 +16,7 @@ export async function criarUsuario(dados: credenciais){ //função que cria um n
     
     //cria o novo usuário
     const novoUsuario = {
-        id: crypto.randomUUID(), //cria um ID criptografado aleatório
+        id: crypto.randomUUID(), //cria um ID único criptografado aleatório
         email,
         senha: senhaCriptografada
     }
@@ -37,23 +37,24 @@ export async function criarUsuario(dados: credenciais){ //função que cria um n
     return {success: 'Usuário criado com sucesso'};
 }
 
-export async function validarCredenciais(dados: credenciais){ //função que valida o login
-    const email = dados.email;
+export async function validarCredenciais(dados: credenciais){ //função de validação para o login
+    const email = dados.email; //extração dos dados enviados do login
     const senha = dados.senha;
 
     const usuariosDB = await conexaoBD.retornarBD('usuarios-db.json'); //vetor que guarda o conteúdo da base de dados (cada usuário é um objeto com id, email e senha)
 
-    const usuario = usuariosDB.find(i => i.email === email); //encontra o objeto que tem o email correspondente
+    const usuario = usuariosDB.find(i => i.email === email); //encontra o objeto que tem o email correspondente. O objeto usuario possui email, senha e id
     
     if(!usuario){ //não achou o usuário no bd
-        return {error: 'Usuário não encontrado'}
+        return {error: 'Usuário não encontrado'};
     }
 
-    const verificado = await bcrypt.compare(senha, usuario.senha as string); //compara a senha do forms com a senha criptografada do bd
+    const verificado = await bcrypt.compare(senha, usuario.senha as string); //compara a senha do forms com a senha criptografada do bd; as string parece ser desnecessário
 
-    if(verificado){
-        await criarToken(usuario.id, usuario.email);
-        redirect('/principal'); //cria um token para o usuário verificado e o redireciona para a página principal
+    if(verificado){ //senha correta
+        //cria um token para o usuário verificado e o redireciona para a página principal
+        await criarToken(usuario.id, usuario.email); 
+        redirect('/principal'); 
     }
     else{
         return {error:'Usuário ou senha incorreto'}; //senha incorreta

@@ -14,12 +14,12 @@ import logo from 'public/logo.png';
 
 export default async function Header(){
 
-    const logado = await validarSessao();
+    const logado = await validarSessao(); //retona o payload dos coockies ou false se a sessão não for validada
 
     let userEmail: string = "";
 
     //a variável logado pode vir como nula
-    //se logado não for nulo, pega a propriedade userEmail dele; o email do usuário
+    //se logado não for nulo, pega a propriedade usuarioEmail dele; o email do usuário
     if(logado){
         userEmail = logado?.usuarioEmail as string; 
     }
