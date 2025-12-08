@@ -9,5 +9,10 @@
     "id": "18b6c377-8ab8-4b97-900a-098dcb39a4d1",
     "email": "jaum2@teste.com.br",
     "senha": "$2b$10$d5l9zwvJr6fJMIiwg4Qy9.fSDAkCeFNpzmCzcxnXdrKx0rKBeJo96"
+  },
+  {
+    "id": "b6b73154-dfcd-4c09-adf8-3be042da4c33",
+    "email": "pop@teste.com",
+    "senha": "$2b$10$qrf2vKQIEaYiVLoFq5pupedP2FX3cZz3AFFcEmkBa97SkX1/O.X0."
   }
 ]

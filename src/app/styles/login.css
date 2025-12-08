@@ -1,13 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Inter', sans-serif;
-
-    /* AQUI GARANTE QUE A IMAGEM VAI APARECER */
-    
-    
+    font-family: 'Inter', sans-serif;   
+    background: rgb(16, 17, 44);
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -23,7 +21,7 @@ body {
 }
 
 /* Caixa de login */
-.login-container {
+.formLogin {
     position: relative;
 
     width: 380px;
@@ -37,20 +35,13 @@ body {
     text-align: center;
 }
 
-h2 {
-    margin: 0 0 8px 0;
+h1 {
+    margin: 0 0 16px 0;
     font-size: 22px;
     font-weight: 600;
     color: #ffffff;
 }
 
-.subtitle {
-    font-size: 14px;
-    color: #ffffff;
-    margin-bottom: 22px;
-}
-
-/* Inputs */
 input {
     width: 100%;
     padding: 12px 2px 12px 4px;
@@ -65,9 +56,8 @@ input {
     font-size: 15px;
 }
 
-/* Botões */
-.btn_continuar {
-    width: 100%;
+button{
+    width: 60%;
     padding: 12px;
     border: none;
     border-radius: 8px;
@@ -81,26 +71,6 @@ input {
     margin-bottom: 12px;
 }
 
-.btn_continuar:hover {
+button:hover {
     opacity: 0.85;
-}
-
-/* Botão Criar Conta*/
-.btn_criar_conta {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.2s;
-
-    background: transparent;
-    border: 1px solid #666;
-    color: #e1e1e1;
-}
-
-.btn_criar_conta:hover {
-    background: rgba(255, 255, 255, 0.08);
 }

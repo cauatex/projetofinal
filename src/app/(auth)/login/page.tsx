@@ -54,18 +54,19 @@ export default function Login() {
     }
 
     return(
-       
-                //O formulário dispara a função verificarLogin, passando os dados inseridos nos inputs pelo usuário (email e senha)
-                <form action={verificarLogin}> 
+        //O formulário dispara a função verificarLogin, passando os dados inseridos nos inputs pelo usuário (email e senha)
+        <>
+            <h1>Faça seu login ou crie uma conta</h1>
+                <form action={verificarLogin} className='formLogin'> 
                     <input type="email" placeholder="E-mail" name='email' id='email' aria-label='email'/>
                     <input type="password" placeholder="Senha" name='senha' id='senha' aria-label='senha'/>
 
-                    <button type="submit" className="btn_continuar">Continuar</button>
+                    <button type="submit">Continuar</button>
 
                     
-                       <Link href='/cadastro'>Criar conta</Link> 
+                       <Link href='/cadastro'><button>Criar conta</button></Link> 
                   
                 </form>
-    
+        </>
     );
 }

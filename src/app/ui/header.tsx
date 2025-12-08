@@ -37,10 +37,10 @@ export default async function Header(){
                     />
                 </div>
     
-                <p id="logo">Cine Filmes</p>
+                <p id="logo">ine Filmes</p>
             </div>
            
-            <form action="">
+            <form className='pesquisa'action="">
                 <input type="text" id="filme" name="filme_selecionado" placeholder="Digite um filme que busca..."/>
     
                 <button className="buscar">
@@ -54,14 +54,8 @@ export default async function Header(){
                 </button>
             </form>
 
-           
-
             <section>
-                <Link href={'/principal/criar'} className="botao_adicionar">Adicionar</Link>
-            </section>
-
-            <section>
-
+                <Link href={'/principal/criar'}><button  className="botao_adicionar">Adicionar</button></Link>
                 {logado && <UserInfo userEmail={userEmail}/>} 
                 {logado && <LogoutButton/>}
                 

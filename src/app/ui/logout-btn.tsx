@@ -1,3 +1,5 @@
+import '@/app/styles/principal.css'
+
 import { deletarSessao } from '../libs/session';
 import { redirect } from 'next/navigation';
 
@@ -13,7 +15,7 @@ export default function botaoLogout(){
 
     return( //botão dispara função de logout
         <form action={logout}>
-            <button>Logout</button>
+            <button className='botao_logout'>Logout</button>
         </form>
     )
 }
