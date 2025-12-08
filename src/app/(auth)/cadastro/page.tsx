@@ -62,16 +62,16 @@ export default function CadastrarUsuario(){
 
     //o atributo name do input guarda o dado digitado e envia para o servidor
     return(
-            //formulário de cadastro dispara a função para criar usuário
-            <>
-                <h1>Insira seu E-mail e crie uma senha</h1>
-                <form className='formCadastro'action={criarUsuarioCliente}>
-                    <input type="email" placeholder="E-mail" name='email' id='email' aria-label='email'/>
-                    <input type="password" placeholder="Senha" name='senha' id='senha' aria-label='senha' />
-                    <input type="password" placeholder="Confirmar Senha" name='confirmaSenha' id='confirmaSenha' aria-label='confirmaSenha'/>
+        //formulário de cadastro dispara a função para criar usuário
+        <section>
+            <h1 className='titulo-cadastro'>Insira seu E-mail e crie uma senha</h1>
+            <form className='formCadastro'action={criarUsuarioCliente}>
+                <input className='inputForm' type="email" placeholder="E-mail" name='email' id='email' aria-label='email'/>
+                <input className='inputForm'  type="password" placeholder="Senha" name='senha' id='senha' aria-label='senha' />
+                <input className='inputForm'  type="password" placeholder="Confirmar Senha" name='confirmaSenha' id='confirmaSenha' aria-label='confirmaSenha'/>
 
-                    <button type="submit" className="btn_cadastrar">Cadastrar</button>
-                </form>
-            </>
-    );
+                <button type="submit" className="btn_cadastrar">Cadastrar</button>
+            </form>
+        </section>
+    )
 }

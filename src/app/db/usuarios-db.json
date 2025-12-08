@@ -1,23 +1,7 @@
 [
-  {},
   {
     "id": "2629a562-bdf6-4a03-8f85-2dde24edcedd",
     "email": "jaum@teste.com.br",
     "senha": "$2b$10$ty5a0HhHExErzh4S9l70oeZLwzIj7ufql8xX9qxnzDDR7BOq4uLyC"
-  },
-  {
-    "id": "18b6c377-8ab8-4b97-900a-098dcb39a4d1",
-    "email": "jaum2@teste.com.br",
-    "senha": "$2b$10$d5l9zwvJr6fJMIiwg4Qy9.fSDAkCeFNpzmCzcxnXdrKx0rKBeJo96"
-  },
-  {
-    "id": "b6b73154-dfcd-4c09-adf8-3be042da4c33",
-    "email": "pop@teste.com",
-    "senha": "$2b$10$qrf2vKQIEaYiVLoFq5pupedP2FX3cZz3AFFcEmkBa97SkX1/O.X0."
-  },
-  {
-    "id": "b1109d84-1be7-4102-a638-7506eba55af3",
-    "email": "caua@teste.com",
-    "senha": "$2b$10$u6z3WMjTMlrPQdnKNBP32e0Q0r/Sm2/JNc0xwlVYT2EQErnianVsi"
   }
 ]

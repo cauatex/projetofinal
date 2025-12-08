@@ -20,10 +20,10 @@ export default async function PaginaInicial() {
     })
 
   return (
-        <>
+        <section className='conteudo-pagina'>
             <Header />
 
-            <h1>CINE FILMES</h1>
+            <h1 className='titulo-principal'>CINE FILMES</h1>
             
             <div className="cards">
                 {filmes}
@@ -32,6 +32,6 @@ export default async function PaginaInicial() {
             <div className="footer">
                 <p>Feito com &hearts; por GitHub</p>
             </div>
-        </>
+        </section>
   );
 }
