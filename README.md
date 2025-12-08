@@ -5,7 +5,7 @@ Este repositório contém o desenvolvimento do trabalho final da disciplina de P
 ### 🎯 Objetivo do Projeto
 O objetivo principal deste trabalho é consolidar os fundamentos vistos em sala de aula na criação de uma aplicação web, e expandir o conhecimento do framework Next escolhido pela equipe.
 
-### 🚗 Tema do Sistema
+### 🎬 Tema do Sistema
 Para aplicarmos os conceitos aprendidos na disciplina, será desenvolvido um sistema de compra de ingressos de cinema, na qual usuários podem comprar o ingresso para um filme desejado, a partir dos dados do filme, como nome, imagem e descrição. O projeto conta apenas com as páginas dos administradores do sistema, não implementamos a páginas do cliente.
 Os administradores conseguem fazer cadastro; login; adicionar, visualizar, editar ou deletar um filme do site; além de poder realizar o logout.
 
