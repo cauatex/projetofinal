@@ -17,19 +17,22 @@ Os administradores conseguem fazer cadastro; login; adicionar, visualizar, edita
 | **Validação** | Zod | Utilizada para validação do formulário. |
 
 ### 🖼️ Screenshots
+
 Aqui estão algumas capturas de tela das principais funcionalidades:
 
 * **Tela de Login e Cadastro**
   
-* **Painel do Administrador(Listagem de Filmes)**
-
-* **Formulário de Cadastro das informações do Filme **
-
-* **Formulário de Atualização das informações do Filme **
+* **Painel do Administrador (Listagem de Filmes)**
+  
+* **Formulário de Cadastro das informações do Filme**
+  
+* **Formulário de Atualização das informações do Filme**
   
 ### 🌐 Integração com API Externa
 
-O projeto faz uso da API **[OMDb API]((https://www.omdbapi.com/))* para **[A API do OMDb é um serviço web para obter informações sobre filmes, como imagens e descrições]**.
+O projeto faz uso da API **OMDb API** ([https://www.omdbapi.com/](https://www.omdbapi.com/)).
+
+* **Finalidade:** Obter informações detalhadas sobre filmes (como imagens e descrições) para enriquecer o recurso "Filme" do sistema.
 
 ### 👨‍💻 Equipe
 * [CAUÃ TEIXEIRA GOMES VIEIRA](https://github.com/cauatex)
