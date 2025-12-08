@@ -29,9 +29,7 @@ Aqui estão algumas capturas de tela das principais funcionalidades:
   
 ### 🌐 Integração com API Externa
 
-O projeto faz uso da API **[OMDb API]** para **[A API do OMDb é um serviço web para obter informações sobre filmes, como imagens e descrições]**.
-
-* `[https://www.themoviedb.org/documentation/api](https://www.omdbapi.com/)`
+O projeto faz uso da API **[OMDb API]((https://www.omdbapi.com/))* para **[A API do OMDb é um serviço web para obter informações sobre filmes, como imagens e descrições]**.
 
 ### 👨‍💻 Equipe
 * [CAUÃ TEIXEIRA GOMES VIEIRA](https://github.com/cauatex)
