@@ -33,9 +33,8 @@ export default function Filme(props: FilmeProps){
     }
 
     return(
-        <div>
-            <h2>{props.nome}</h2>
-
+        <div className="card">
+            
             <Image
                 src={props.img}
                 alt={`Imagem do filme ${props.nome}`}
@@ -43,16 +42,21 @@ export default function Filme(props: FilmeProps){
                 height={200}
             />
 
-            <p>{props.descricao}</p>
+            <h2 className='titulo'>{props.nome}</h2>
 
-            <div>
-                <Link href={`/principal/editar/${props.id}`} id="btn-editar">Editar</Link>
+            <div className='conteudo'>
+                <p className='descricao'>{props.descricao}</p>
 
-                <form action={deletarFilme}>
-                    <button id="btn-deletar">Deletar</button>
-                </form>
+                <div className="botoes">
+                    <div className="div-editar">
+                        <Link href={`/principal/editar/${props.id}`}><button className="botao">Editar</button></Link>
+                    </div>
+
+                    <form action={deletarFilme}>
+                        <button className="botao">Deletar</button>
+                    </form>
+                </div>
             </div>
-
         </div>
     )
 }

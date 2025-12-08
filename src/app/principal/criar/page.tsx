@@ -1,3 +1,5 @@
+import '@/app/styles/adicionar.css'
+
 import conexaoBD from "@/app/libs/conexao-bd";
 
 import { FilmeProps } from "@/app/ui/filme-card";
@@ -31,24 +33,27 @@ export default function CriarFilme(){
 
 
     return(
-        <section>
-            <h2>Inserir Novo Filme</h2>
+        <section className="pag">
+            <h2 className='msg'>Inserir Novo Filme</h2>
 
-            <form action={adicionarFilme}>
-
-                <section>
-                    <input type="text" name="nome" id="nome" placeholder="Nome do Filme" aria-label="Nome do Filme"/>
-                </section>
+            <form action={adicionarFilme} className='form-criar'>
 
                 <section>
-                    <input type="text" name="descricao" id="descricao" placeholder="Descrição do Filme" aria-label="Descrição do Filme"/>
+                    <input className='entrada' type="text" name="nome" id="nome" placeholder="Nome do Filme" aria-label="Nome do Filme"/>
                 </section>
 
-                   <section>
-                    <input type="text" name="img" id="img" placeholder="Link com a imagem do Filme" aria-label="Link com a imagem do Filme"/>
+                <section>
+                    <input className='entrada' type="text" name="descricao" id="descricao" placeholder="Descrição do Filme" aria-label="Descrição do Filme"/>
                 </section>
 
-                <button>Adicionar</button>
+                <section>
+                    <input className='entrada' type="text" name="img" id="img" placeholder="Link com a imagem do Filme" aria-label="Link com a imagem do Filme"/>
+                </section>
+
+                <div className='btns'>
+                    <button className='botao-adicionar'>Adicionar</button>
+                    <button className='botao-adicionar'>Cancelar</button>
+                </div>
             </form>
         </section>
     )

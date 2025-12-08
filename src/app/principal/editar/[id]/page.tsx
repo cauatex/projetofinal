@@ -1,3 +1,5 @@
+import '@/app/styles/adicionar.css'
+
 import conexaoBD from "@/app/libs/conexao-bd";
 
 import { FilmeProps } from "@/app/ui/filme-card";
@@ -40,23 +42,27 @@ export default async function EditarFilme({params}: EditarFilmeProps){
     }
 
     return(
-        <section>
-            <h2>{filmeToEdit.nome}</h2>
+        <section className='pag'>
+            <h2 className='msg'>Editar {filmeToEdit.nome}</h2>
 
-            <form action={atualizarFilme}>
+            <form className='form-criar' action={atualizarFilme}>
                 <section>
-                    <input type="text" name="nome" id="nome" placeholder="Nome do Filme" aria-label="Nome do Filme" defaultValue={filmeToEdit.nome} />
+                    <input className='entrada' type="text" name="nome" id="nome" placeholder="Nome do Filme" aria-label="Nome do Filme" defaultValue={filmeToEdit.nome} />
                 </section>
 
                 <section>
-                    <input type="text" name="descricao" id="descricao" placeholder="Descrição do Filme" aria-label="Descrição do Filme" defaultValue={filmeToEdit.descricao} />
+                    <input className='entrada' type="text" name="descricao" id="descricao" placeholder="Descrição do Filme" aria-label="Descrição do Filme" defaultValue={filmeToEdit.descricao} />
                 </section>
 
                 <section>
-                    <input type="text" name="img" id="img" placeholder="Link com a imagem do Filme" aria-label="Link com a imagem do Filme" defaultValue={filmeToEdit.img}/>
+                    <input className='entrada' type="text" name="img" id="img" placeholder="Link com a imagem do Filme" aria-label="Link com a imagem do Filme" defaultValue={filmeToEdit.img}/>
                 </section>
 
-                <button>Aualizar</button>
+                <div className='btns'>
+                    <button className='botao-adicionar'>Atualizar</button>
+                    <button className='botao-adicionar'>Cancelar</button>
+                </div>
+                
             </form>
         </section>
     )
