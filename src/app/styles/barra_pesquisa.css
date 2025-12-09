@@ -1,0 +1,46 @@
+.corpo{
+    background-color: #4cc9f0;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    margin-top: 10rem;
+    border: 1px solid black;
+}
+
+ /* Estilo do input */
+.pes {
+    flex: 1;
+    padding: 18px 25px;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    width: 25rem;
+}
+
+.pes:focus {
+    background-color: #f9f9f9;
+    box-shadow: inset 0 0 0 2px #4cc9f0;
+}
+
+/* Estilo do botão */
+.btn {
+    padding: 18px 35px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    background: linear-gradient(135deg, #4361ee 0%, #3a0ca3 100%);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.5px;
+}
+

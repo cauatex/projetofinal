@@ -22,14 +22,14 @@ export default function Filme(props: FilmeProps){
         const bd: string = 'filmes-db.json';
         const filme = await conexaoBD.retornarBD(bd);
 
-        //o filme que vai ser removido
+        //o índice do filme que vai ser removido
         const filmeToRemove = filme.findIndex((f) => f.id === props.id); //props é o objeto filme
 
         filme.splice(filmeToRemove, 1); //splice: a partir de qual indice e quantos vai remover, 1 só
 
         await conexaoBD.armazenarBD(bd, filme); //sobreescreve o arquivo JSON com a nova lista, sem o filme que acabei de remover
         
-        redirect('/principal'); //refresh na página, redireciona ora page.tsx
+        redirect('/principal'); //refresh na página, redireciona pra page.tsx
     }
 
     return(
@@ -47,7 +47,7 @@ export default function Filme(props: FilmeProps){
             <div className='conteudo'>
                 <p className='descricao'>{props.descricao}</p>
 
-                <div className="botoes">
+                <div className="bot">
                     <div className="div-editar">
                         <Link href={`/principal/editar/${props.id}`}><button className="botao">Editar</button></Link>
                     </div>
@@ -61,5 +61,5 @@ export default function Filme(props: FilmeProps){
     )
 }
 
-//editar é uma página rteável parametrizada, vou editar 1 filme específico, identificado pelo id
+//editar é uma página roteável parametrizada, vou editar 1 filme específico, identificado pelo id
 //crio uma rota dinâmica passando o id do filme junto da rota

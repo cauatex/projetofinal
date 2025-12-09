@@ -2,7 +2,9 @@
 
 import ConexaoBD from "@/app/libs/conexao-bd";
 import { FilmeProps } from "@/app/ui/filme-card";
-import { revalidatePath } from "next/cache"; // IMPORTANTE
+
+
+import { revalidatePath } from "next/cache"; //Avisa o Next.js que a página /principal mudou e precisa ser recarregada quando o usuário chegar lá.
 
 const arquivo = 'filmes-db.json';
 
@@ -25,8 +27,7 @@ export async function salvarFilmeNoBD(filme: FilmeData) {
   listaFilmes.push(novoFilme);
   await ConexaoBD.armazenarBD(arquivo, listaFilmes);
 
-  // Avisa ao Next.js que a página /principal mudou e precisa ser recarregada
-  // quando o usuário chegar lá.
+  //Avisa o Next.js que a página /principal mudou e precisa ser recarregada quando o usuário chegar lá.
   revalidatePath('/principal'); 
   
   // Retornamos true para avisar o front que deu certo

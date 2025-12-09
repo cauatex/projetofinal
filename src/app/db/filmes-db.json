@@ -1,26 +1,26 @@
 [
   {
-    "id": "55c37e84-2bb7-4bf9-b93c-0279c1f1e359",
-    "nome": "O Homem Morcego",
+    "id": "4fec2b09-98b8-44b8-bc41-a1adc11a4544",
+    "nome": "Batman",
     "descricao": "The Dark Knight of Gotham City begins his war on crime with his first major enemy being Jack Napier, a criminal who becomes the clownishly homicidal Joker.",
     "img": "https://m.media-amazon.com/images/M/MV5BYzZmZWViM2EtNzhlMi00NzBlLWE0MWEtZDFjMjk3YjIyNTBhXkEyXkFqcGc@._V1_SX300.jpg"
   },
   {
-    "id": "b491aa3b-8457-4ca8-b63e-d277a243940b",
-    "nome": "Ghostbusters",
-    "descricao": "Three parapsychologists forced out of their university funding set up shop as a unique ghost removal service in New York City, attracting frightened yet skeptical customers.",
-    "img": "https://m.media-amazon.com/images/M/MV5BMGI0Yjg2ODAtNDYzNi00Njc2LTlkMmMtMmRmYWI5MDE4ZGRkXkEyXkFqcGc@._V1_SX300.jpg"
+    "id": "9c5ee130-610d-44a2-a427-68015e76482c",
+    "nome": "Superman ACO",
+    "descricao": "Superman must reconcile his alien Kryptonian heritage with his human upbringing as reporter Clark Kent. As the embodiment of truth, justice and the human way he soon finds himself in a world that views these as old-fashioned.",
+    "img": "https://m.media-amazon.com/images/M/MV5BOGMwZGJiM2EtMzEwZC00YTYzLWIxNzYtMmJmZWNlZjgxZTMwXkEyXkFqcGc@._V1_SX300.jpg"
   },
   {
-    "id": "5d93e698-e759-4777-9ce7-91c08dea9214",
-    "nome": "The Avengers",
-    "descricao": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
-    "img": "https://m.media-amazon.com/images/M/MV5BNGE0YTVjNzUtNzJjOS00NGNlLTgxMzctZTY4YTE1Y2Y1ZTU4XkEyXkFqcGc@._V1_SX300.jpg"
+    "id": "4e14e1d5-c9b2-4bec-996a-884763e7df9d",
+    "nome": "Captain Marvel",
+    "descricao": "Carol Danvers becomes one of the universe's most powerful heroes when Earth is caught in the middle of a galactic war between two alien races.",
+    "img": "https://m.media-amazon.com/images/M/MV5BZDI1NGU2ODAtNzBiNy00MWY5LWIyMGEtZjUxZjUwZmZiNjBlXkEyXkFqcGc@._V1_SX300.jpg"
   },
   {
-    "id": "8bdd69d1-c0bc-45d8-b1ee-40352267103f",
-    "nome": "Barbie",
-    "descricao": "Barbie and Ken are having the time of their lives in the seemingly perfect world of Barbie Land. However, when they get a chance to go to the outside world, they soon discover the joys and perils of living among regular humans.",
-    "img": "https://m.media-amazon.com/images/M/MV5BYjI3NDU0ZGYtYjA2YS00Y2RlLTgwZDAtYTE2YTM5ZjE1M2JlXkEyXkFqcGc@._V1_SX300.jpg"
+    "id": "9787ab89-65ef-42fd-a25e-ef924a4e3686",
+    "nome": "Ana",
+    "descricao": "Ana meets Rafa in a chance encounter and they embark on a road trip to try and save him from bankruptcy, or worse.",
+    "img": "https://m.media-amazon.com/images/M/MV5BYzI0MzI2YTEtYjdlZC00MDEyLWExYWUtZjQ3ZWM1Zjk0NmE2XkEyXkFqcGc@._V1_SX300.jpg"
   }
 ]

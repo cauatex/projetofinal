@@ -216,7 +216,7 @@ header{
       color: rgb(169, 167, 167);
     }
 
-    .botoes{
+    .bot{
       display: flex;
       margin-bottom: 1rem;
       height: 3rem;

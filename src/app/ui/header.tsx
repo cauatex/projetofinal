@@ -51,3 +51,6 @@ export default async function Header(){
         </header>
     )
 }
+
+//imprime olá nome
+//nome: tudo oq vem antes do @ do email do usuário

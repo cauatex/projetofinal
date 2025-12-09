@@ -1,0 +1,26 @@
+/* Versão minimalista do card */
+.character-card {
+  background-color: #4cc9f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  padding: 15px 15px 8px;
+  font-size: 1.5rem;
+  border-bottom: none;
+}
+
+.foto {
+  height: 200px;
+}
+
+.texto {
+  padding: 15px;
+  background-color: transparent;
+  border-top: none;
+}

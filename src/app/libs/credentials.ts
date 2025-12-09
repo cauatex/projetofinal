@@ -49,8 +49,7 @@ export async function validarCredenciais(dados: credenciais){ //função de vali
         return {error: 'Usuário não encontrado'};
     }
 
-    const verificado = await bcrypt.compare(senha, usuario.senha as string); //compara a senha do forms com a senha criptografada do bd; as string parece ser desnecessário
-
+    const verificado = await bcrypt.compare(senha, usuario.senha as string); //compara a senha do forms com a senha criptografada do bd
     if(verificado){ //senha correta
         //cria um token para o usuário verificado e o redireciona para a página principal
         await criarToken(usuario.id, usuario.email); 

@@ -8,5 +8,15 @@
     "id": "50d3a2d9-5bb5-4511-8801-4d5eb9a96229",
     "email": "jaum2@teste.com.br",
     "senha": "$2b$10$cz4huQk8KiI9SfrC.xREWufxQDI0RG/Pa5/cFjK9cgIN/jwWD4ZS."
+  },
+  {
+    "id": "80d6d2e3-5d23-4bf6-a95e-12487de64b36",
+    "email": "jaum3@teste.com.br",
+    "senha": "$2b$10$DJ9dNEemlqJxJkMyDIjHa.TZHIOoOJr/c2b5TROkkLh/ZiIViPpKm"
+  },
+  {
+    "id": "7a88616e-4a94-4ff8-9006-129791c859b9",
+    "email": "jaum4@teste.com.br",
+    "senha": "$2b$10$DfmbyCa3vOJZ8YJs0OGka.ivpn7t1WGiy8CsZlQp8YO4FqWJLd4jq"
   }
 ]
