@@ -69,6 +69,7 @@ Abra o terminal na pasta raiz do projeto e execute o seguinte comando para baixa
 É necessário criar um arquivo chamado .env na raiz do projeto para configurar as chaves de API e tokens de autenticação.
 Crie o arquivo e cole exatamente o seguinte conteúdo:
 TOKEN=cdbc26f41828c2b779644572417ea17d92d3b09cff37148686e7daf0301c3ea200eb246e00f050ee3b460fec1e0e1799d1c9c549708a4f6460f81b9c94d30adc
+
 NEXT_PUBLIC_OMDB_API_KEY=c4d00044
 
 4. Executando o Projeto
