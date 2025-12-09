@@ -3,18 +3,22 @@
 Este repositório contém o desenvolvimento do trabalho final da disciplina de Programação Web, que consiste na criação de um site de filmes, como o Ingresso.com e CineA.
 
 ### 🎯 Objetivo do Projeto
-O objetivo principal deste trabalho é consolidar os fundamentos vistos em sala de aula na criação de uma aplicação web, e expandir o conhecimento do framework Next escolhido pela equipe.
+O objetivo principal deste trabalho é consolidar os fundamentos vistos em sala de aula na criação de uma aplicação web, e expandir o conhecimento do framework Next, escolhido pela equipe.
 
 ### 🎬 Tema do Sistema
-Para aplicarmos os conceitos aprendidos na disciplina, será desenvolvido um sistema de compra de ingressos de cinema, na qual usuários podem comprar o ingresso para um filme desejado, a partir dos dados do filme, como nome, imagem e descrição. O projeto conta apenas com as páginas dos administradores do sistema, não implementamos a páginas do cliente.
-Os administradores conseguem fazer cadastro; login; adicionar, visualizar, editar ou deletar um filme do site; além de poder realizar o logout.
+Para aplicarmos os conceitos aprendidos na disciplina, será desenvolvido um sistema de pesquisa de filmes e armazenamento, a partir dos dados do filme, como nome, imagem e descrição. O projeto conta com integração com a API OMDb para obtenção de dados de filmes a partir dos títulos.
+Os usuários conseguem fazer cadastro e login; adicionar, visualizar, editar ou deletar um filme do site; realizar o logout. O sistema armazena todos os dados inseridos pela API e pelo cadastro de usuários
 
 ### ⚙️ Tecnologias Utilizadas
-| **Frontend** | Next.js (React) | Escolha do grupo com aprofundamento. |
-| **Backend** | NodeJS (Express, Next.js API Routes, ou similar) | Baseado no visto em aula, mas aprofundado/alternativo. |
+| **Frontend** | Next.js |
+| **Backend** | Next.js |
 | **Dados** | Arquivos JSON | Utilizado para implementar o CRUD completo (Create, Read, Update, Delete). |
-| **Autenticação** | JSON Web Tokens (JWT) | Necessário para rotas privadas. |
+| **Autenticação** | JSON Web Tokens (JWT), jose | Necessário para rotas privadas. |
 | **Validação** | Zod | Utilizada para validação do formulário. |
+| **Menssagens de erro** | React-hot-toast | Utilizado nas telas de login e cadastro |
+| **Integração com API** | Axios; OMDb API | Usados para adicionar filmes à base de dados |
+| **Criptografia** | Bcrypt | Uilizado para criação e validação de senhas |
+| **Sessão** | Cookies | Armazenamento e validação de sessão |
 
 ### 🖼️ Screenshots
 
@@ -45,7 +49,7 @@ Instituição: UNIFEI (Universidade Federal de Itajubá) <br>
 Semestre:  2025/2
 
 ### Observação
-Este projeto é de uso estritamente acadêmico.
+Este projeto tem finalidade estritamente acadêmica e de aprendizado.
 
 
 
