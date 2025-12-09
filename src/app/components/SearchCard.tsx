@@ -3,7 +3,7 @@
 import { useState } from "react"; 
 import axios from "axios";
 import { useRouter } from "next/navigation"; 
-import CharacterCard from "@/app/components/CharacterCard";
+import CharacterCard from "./CharacterCard";
 import { salvarFilmeNoBD } from "@/app/actions/salvar-filmes"; 
 
 
@@ -68,15 +68,14 @@ export default function SearchCard() {
       setEncontrou(true);
       setActive(true);
 
-     // --- AQUI ESTÁ A MUDANÇA ---
-      // 1. Espera salvar no banco
-      await salvarFilmeNoBD(novoFilme);
+      // Salva no Banco de Dados
+      await salvarFilmeNoBD(novoFilme); 
       
-      // 2. Redireciona via Client Side
-      router.push('/principal'); 
+      // Atualiza a lista na tela
+      router.refresh(); 
 
     } catch (e) {
-      console.error(e); // Bom para debugar
+      // Se der erro de rede/axios, tratamos como não encontrado também
       setActive(true);
       setEncontrou(false);
     }
@@ -105,7 +104,7 @@ export default function SearchCard() {
         />
       )}
 
-      {/* Caso 2: Buscou e NÃO achou*/}
+      {/* Caso 2: Buscou e NÃO achou -> Mostra o Luke */}
       {active && !encontrou && (
         <div style={{ textAlign: "center", marginTop: "20px" }}>
           <h2 style={{ color: "white", marginBottom: "10px" }}>NÃO! O filme não existe!</h2>
@@ -115,3 +114,7 @@ export default function SearchCard() {
     </>
   );
 }
+
+
+
+

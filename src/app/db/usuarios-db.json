@@ -3,5 +3,10 @@
     "id": "2629a562-bdf6-4a03-8f85-2dde24edcedd",
     "email": "jaum@teste.com.br",
     "senha": "$2b$10$ty5a0HhHExErzh4S9l70oeZLwzIj7ufql8xX9qxnzDDR7BOq4uLyC"
+  },
+  {
+    "id": "50d3a2d9-5bb5-4511-8801-4d5eb9a96229",
+    "email": "jaum2@teste.com.br",
+    "senha": "$2b$10$cz4huQk8KiI9SfrC.xREWufxQDI0RG/Pa5/cFjK9cgIN/jwWD4ZS."
   }
 ]

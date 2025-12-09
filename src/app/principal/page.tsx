@@ -2,6 +2,8 @@ import '@/app/styles/principal.css';
 
 import Image from "next/image";
 
+import '@/app/styles/footer.css';
+
 import conexaoBD from '../libs/conexao-bd';
 
 const bd: string = 'filmes-db.json';
@@ -29,8 +31,9 @@ export default async function PaginaInicial() {
                 {filmes}
             </div>
                 
-            <div className="footer">
-                <p>Feito com &hearts; por GitHub</p>
+            <div className="container">
+                <p> Feito com &hearts; por<a href="https://github.com/cauatex/projetofinal" className="link">Cine Filmes</a></p>
+                <p>© 2025 - Copyright CineFilmes.com - Todos os direitos reservados</p>
             </div>
         </section>
   );

@@ -55,20 +55,24 @@ export default function Login() {
 
     return(
         //O formulário dispara a função verificarLogin, passando os dados inseridos nos inputs pelo usuário (email e senha)
-        <section>
-            <div className='background-overlay'></div>
+        
+        <section className='conteudo-login'>
 
-            <h1 className='titulo'>Faça seu login ou crie uma conta</h1>
-            <form action={verificarLogin} className='formLogin'> 
+            <form action={verificarLogin} className='formLogin'>
 
-                <input className='input-user' type="email" placeholder="E-mail" name='email' id='email' aria-label='email'/>
-                <input className='input-user' type="password" placeholder="Senha" name='senha' id='senha' aria-label='senha'/>
+                <h2 className='titulo'>Faça login ou crie uma conta</h2>
+                <p className='subtitulo'>Digite seu e-mail e senha para continuar</p>
+
+                <input className='input-user' type="email" name='email' placeholder="E-mail" />
+                <input className='input-user' type="password" name='senha' placeholder="Senha" />
 
                 <button className='botoes' type="submit">Continuar</button>
 
-                <Link href='/cadastro'><button className='botoes'>Criar conta</button></Link> 
+                <Link href="/cadastro">
+                    <button type='button' className='botao-criar-conta'>Criar conta</button>
+                </Link>
+
             </form>
         </section>
-        
     )
 }

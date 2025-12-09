@@ -4,13 +4,14 @@ import '@/app/styles/principal.css';
 
 import UserInfo from "./user-info";
 import LogoutButton from "./logout-btn";
+import axios from "axios";
 
 import { validarSessao } from "../libs/session";
 
 import Link from "next/link";
 
-import lupa from 'public/lupa.png';
 import logo from 'public/logo.png';
+
 
 export default async function Header(){
 
@@ -23,6 +24,7 @@ export default async function Header(){
     if(logado){
         userEmail = logado?.usuarioEmail as string; 
     }
+    
 
 
     return(
@@ -39,20 +41,6 @@ export default async function Header(){
     
                 <p id="logo">ine Filmes</p>
             </div>
-           
-            <form className='pesquisa'action="">
-                <input type="text" id="filme" name="filme_selecionado" placeholder="Digite um filme que busca..."/>
-    
-                <button className="buscar">
-                    <Image 
-                        src={lupa}
-                        alt="lupa"
-                        className="lupa"
-                        width={30}
-                        height={30}
-                    />
-                </button>
-            </form>
 
             <section>
                 <Link href={'/principal/criar'}><button  className="botao_adicionar">Adicionar</button></Link>

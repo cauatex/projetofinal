@@ -60,7 +60,6 @@ export default async function EditarFilme({params}: EditarFilmeProps){
 
                 <div className='btns'>
                     <button className='botao-adicionar'>Atualizar</button>
-                    <button className='botao-adicionar'>Cancelar</button>
                 </div>
                 
             </form>
