@@ -33,12 +33,25 @@ Os usuários conseguem fazer cadastro e login; adicionar, visualizar, editar ou 
 Aqui estão algumas capturas de tela das principais funcionalidades:
 
 * **Tela de Login e Cadastro**
+
+<img width="1366" height="609" alt="Image" src="https://github.com/user-attachments/assets/24df7673-3ace-4927-a0cd-e8592de38f2f" />
+<img width="1364" height="610" alt="Image" src="https://github.com/user-attachments/assets/c18893a0-1467-4c2e-a1be-468ad9dc884c" />
+<img width="1366" height="612" alt="Image" src="https://github.com/user-attachments/assets/cd96112f-0d05-4e7a-9241-944dae8ff280" />
+<img width="1366" height="612" alt="Image" src="https://github.com/user-attachments/assets/bc6c5979-3f62-4a7e-8d70-dcd5288390e1" />
+<img width="1366" height="612" alt="Image" src="https://github.com/user-attachments/assets/4bb53ead-f89f-4038-a832-57e39a74a2c8" />
+<img width="1366" height="612" alt="Image" src="https://github.com/user-attachments/assets/28a6075f-1f85-4ea1-a9f5-1f9455e4dad6" />
   
 * **Painel do Administrador (Listagem de Filmes)**
+
+![Image](https://github.com/user-attachments/assets/3c5843aa-894b-4d90-a063-f775b8281cf9)
   
-* **Formulário de Cadastro das informações do Filme**
+* **Barra de pesquisa implementada com a API**
+
+![Image](https://github.com/user-attachments/assets/7f930549-e0df-4cef-8bb8-fcdefec269bc)
   
 * **Formulário de Atualização das informações do Filme**
+
+![Image](https://github.com/user-attachments/assets/413834cf-015d-480b-9af5-493b86abe619)
   
 ### 🌐 Integração com API Externa
 
