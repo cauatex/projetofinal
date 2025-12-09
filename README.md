@@ -11,13 +11,21 @@ Os usuários conseguem fazer cadastro e login; adicionar, visualizar, editar ou 
 
 ### ⚙️ Tecnologias Utilizadas
 | **Frontend** | Next.js |
+
 | **Backend** | Next.js |
+
 | **Dados** | Arquivos JSON | Utilizado para implementar o CRUD completo (Create, Read, Update, Delete). |
+
 | **Autenticação** | JSON Web Tokens (JWT), jose | Necessário para rotas privadas. |
+
 | **Validação** | Zod | Utilizada para validação do formulário. |
-| **Menssagens de erro** | React-hot-toast | Utilizado nas telas de login e cadastro |
+
+| **Menssagens de erro** | React-hot-toast | Utilizado nas telas de login e cadastro 
+
 | **Integração com API** | Axios; OMDb API | Usados para adicionar filmes à base de dados |
+
 | **Criptografia** | Bcrypt | Uilizado para criação e validação de senhas |
+
 | **Sessão** | Cookies | Armazenamento e validação de sessão |
 
 ### 🖼️ Screenshots
